@@ -1,0 +1,33 @@
+# Python virtual environments
+.venv/
+backend/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# ML / HF caches
+.cache/
+sentence-transformers/
+models/
+
+# Node
+node_modules/
+frontend/codechat-ui/dist/
+frontend/codechat-ui/.vite/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.development
+.env.production
