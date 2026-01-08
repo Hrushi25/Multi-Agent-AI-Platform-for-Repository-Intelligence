@@ -1,88 +1,110 @@
-CodeChat Lite
+# CodeChat Lite
 
-It is a lightweight, open-source demonstration of the core architecture and agent workflows behind CodeChat, a full-scale, production-grade AI platform I built while working at DreamStudio (non-profit).
+**CodeChat Lite** is a lightweight, open-source demonstration of the **core architecture and agent workflows** behind **CodeChat** — a full-scale, production-grade AI platform I built while working at **DreamStudio (non-profit)**.
 
-This repository intentionally focuses on a simplified subset of the system to make the design easy to understand, run locally, and discuss in interviews, while the README documents the complete capabilities of the original CodeChat platform.
+This repository intentionally focuses on a **simplified subset** of the system to make the design easy to understand, run locally, and discuss in interviews.  
+The README also documents the **complete capabilities of the original CodeChat platform** to provide full architectural context.
 
-🚀 The Full CodeChat Platform (DreamStudio)
+---
 
-While at DreamStudio, I built CodeChat, a comprehensive, enterprise-ready AI system with the following capabilities:
+## 🚀 The Full CodeChat Platform (DreamStudio)
 
-🧠 AI & Agent Architecture
+While at DreamStudio, I built **CodeChat**, a comprehensive, enterprise-ready AI platform with the following capabilities:
 
-Multi-agent architecture with specialized agents for:
+---
 
-Conversational chat
-Document ingestion and indexing
-Code understanding and execution
-Diagram generation
-GitHub repository analysis
-Dynamic agent routing and orchestration
-Tool-augmented LLM workflows
-Prompt governance and agent isolation
+## 🧠 AI & Agent Architecture
 
-📄 Multimodal Knowledge Ingestion
+- **Multi-agent architecture** with specialized agents for:
+  - Conversational chat
+  - Document ingestion and indexing
+  - Code understanding and execution
+  - Diagram generation
+  - GitHub repository analysis
+- Dynamic agent routing and orchestration
+- Tool-augmented LLM workflows
+- Prompt governance and agent isolation
+
+---
+
+## 📄 Multimodal Knowledge Ingestion
 
 Upload and analyze:
+- PDFs, text files, markdown, and code files
+- GitHub repositories (entire repos, branches, PRs)
 
-PDFs, text files, markdown, and code files
-GitHub repositories (entire repos, branches, PRs)
-Chunking strategies optimized for:
-Code
-Documentation
-Structured and unstructured text
-Semantic embeddings and vector-based retrieval
+Ingestion pipeline features:
+- Chunking strategies optimized for:
+  - Code
+  - Documentation
+  - Structured and unstructured text
+- Semantic embeddings and vector-based retrieval
 
-🔍 Retrieval-Augmented Generation (RAG)
+---
 
-High-precision semantic search
-Context assembly across multiple documents
-Strict grounding of LLM responses in retrieved context
-Hallucination-resistant answer generation
-Configurable retrieval depth and relevance scoring
+## 🔍 Retrieval-Augmented Generation (RAG)
 
-🧑‍💻 GitHub MCP & Developer Intelligence
+- High-precision semantic search
+- Context assembly across multiple documents
+- Strict grounding of LLM responses in retrieved context
+- Hallucination-resistant answer generation
+- Configurable retrieval depth and relevance scoring
 
-GitHub repository ingestion
-File-level and repo-level semantic search
-Code-aware retrieval and explanation
-Architecture and dependency analysis
-Support for developer workflows and code navigation
+---
 
-🏢 Enterprise & Platform Capabilities
+## 🧑‍💻 GitHub MCP & Developer Intelligence
 
-Authentication and role-based access control (RBAC)
-Usage tracking and rate limiting
-Billing and quota enforcement
-Admin dashboards and analytics
-Audit logging and activity tracking
-Secure API key management
-Environment-based configuration (dev / staging / prod)
+- GitHub repository ingestion
+- File-level and repo-level semantic search
+- Code-aware retrieval and explanation
+- Architecture and dependency analysis
+- Support for developer workflows and code navigation
 
-📊 Observability & Operations
+---
 
-Usage metrics and analytics
-Error tracking and logging
-Agent-level performance monitoring
-System health dashboards
-Production deployment workflows
+## 🏢 Enterprise & Platform Capabilities
 
-🌐 User Experience
+- Authentication and role-based access control (RBAC)
+- Usage tracking and rate limiting
+- Billing and quota enforcement
+- Admin dashboards and analytics
+- Audit logging and activity tracking
+- Secure API key management
+- Environment-based configuration (dev / staging / prod)
 
-Rich chat-based UI
-Multi-session conversation history
-Document and repo management
-Admin interfaces for monitoring and control
-Scalable, production-ready frontend architecture
+---
 
-🧩 What This Repository (CodeChat Lite) Demonstrates
+## 📊 Observability & Operations
 
-This repository is a distilled demo that focuses on the core technical ideas behind the full platform:
+- Usage metrics and analytics
+- Error tracking and structured logging
+- Agent-level performance monitoring
+- System health dashboards
+- Production deployment workflows
 
-📄 File upload and ingestion
-🔍 Semantic embeddings using sentence-transformers
-🧠 Retrieval-augmented generation (RAG)
-🤖 Context-grounded answers using Gemini
-🗂️ Lightweight GitHub repository ingestion (MCP-lite)
-💬 ChatGPT-style UI built with React
-❌ No hallucination when context is missing
+---
+
+## 🌐 User Experience
+
+- Rich chat-based UI
+- Multi-session conversation history
+- Document and repository management
+- Admin interfaces for monitoring and control
+- Scalable, production-ready frontend architecture
+
+---
+
+## 🧩 What This Repository Demonstrates (CodeChat Lite)
+
+This repository is a **distilled demo** that focuses on the **core technical ideas** behind the full CodeChat platform:
+
+- 📄 File upload and ingestion  
+- 🔍 Semantic embeddings using `sentence-transformers`  
+- 🧠 Retrieval-Augmented Generation (RAG)  
+- 🤖 Context-grounded answers using Gemini  
+- 🗂️ Lightweight GitHub repository ingestion (MCP-lite)  
+- 💬 ChatGPT-style UI built with React  
+- ❌ Explicit handling of no-context scenarios (no hallucination when context is missing)
+
+---
+
